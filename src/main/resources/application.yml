@@ -1,0 +1,34 @@
+---
+micronaut:
+  application:
+    name: micronaut-rabbit-test0
+---
+rabbitmq:
+  ##uri: amqp://localhost:5672
+  servers:
+    foo-connection:
+      consumer-executor: foo
+      host: localhost
+      port: 5672
+    bar-connection:
+      host: localhost
+      port: 5672
+    signals-connection:
+      host: localhost
+      port: 5672
+    signals-connection2:
+      host: localhost
+      port: 5672
+    boo-connection:
+      host: localhost
+      port: 5672
+micronaut:
+  executors:
+    foo:
+      type: scheduled
+      nThreads: 25
+my:
+  signals:
+    signal-exchange: signals_exchange
+    signal-binding: signal1
+    signal-queue: signal_queue1

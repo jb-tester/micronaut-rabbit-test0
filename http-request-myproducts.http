@@ -1,0 +1,38 @@
+###
+POST http://localhost:8080/products1/p1
+
+###
+POST http://localhost:8080/products1/p2
+
+###
+POST http://localhost:8080/products1/p3
+
+###
+POST http://localhost:8080/products2/p1
+
+###
+POST http://localhost:8080/products2/p2
+
+###
+POST http://localhost:8080/products2/p3
+
+###
+POST http://localhost:8080/products3/p1
+###
+POST http://localhost:8080/products3/p2
+###
+POST http://localhost:8080/products3/p3
+###
+POST http://localhost:8080/products4/p1
+###
+POST http://localhost:8080/products4/p2
+###
+POST http://localhost:8080/products4/p3
+
+
+###
+GET http://localhost:8080/products
+
+<> 2020-05-19T111202.200.json
+
+###

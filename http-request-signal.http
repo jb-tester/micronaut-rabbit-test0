@@ -1,0 +1,10 @@
+###
+POST http://localhost:8080/signals/add/aaa
+
+###
+POST http://localhost:8080/signals/add/bbb
+
+###
+GET http://localhost:8080/all_signals
+
+###

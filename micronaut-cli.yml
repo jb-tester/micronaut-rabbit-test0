@@ -1,0 +1,5 @@
+profile: rabbitmq
+defaultPackage: micronaut.rabbit.test0
+---
+testFramework: junit
+sourceLanguage: java
