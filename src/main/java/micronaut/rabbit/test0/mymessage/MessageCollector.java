@@ -1,6 +1,6 @@
 package micronaut.rabbit.test0.mymessage;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 public abstract class MessageCollector {
   @Inject MessageRepo repo;

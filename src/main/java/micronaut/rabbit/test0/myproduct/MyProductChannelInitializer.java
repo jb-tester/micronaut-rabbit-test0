@@ -1,14 +1,14 @@
 package micronaut.rabbit.test0.myproduct;
 
 import com.rabbitmq.client.Channel;
-import io.micronaut.configuration.rabbitmq.connect.ChannelInitializer;
+import io.micronaut.rabbitmq.connect.ChannelInitializer;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 import java.io.IOException;
 @Singleton
 public class MyProductChannelInitializer extends ChannelInitializer {
     @Override
-    public void initialize(Channel channel) throws IOException {
+    public void initialize(Channel channel, String name) throws IOException {
        channel.exchangeDeclare("myproduct_exchange","topic");
        channel.queueDeclare("product_queue1",false,false,false,null);
        channel.queueDeclare("product_queue2",false,false,false,null);

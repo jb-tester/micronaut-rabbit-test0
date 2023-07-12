@@ -2,11 +2,11 @@ package micronaut.rabbit.test0.myproduct;
 
 import com.rabbitmq.client.BasicProperties;
 import com.rabbitmq.client.Envelope;
-import io.micronaut.configuration.rabbitmq.annotation.Queue;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitListener;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitProperty;
 
-import javax.inject.Inject;
+import io.micronaut.rabbitmq.annotation.Queue;
+import io.micronaut.rabbitmq.annotation.RabbitListener;
+import io.micronaut.rabbitmq.annotation.RabbitProperty;
+import jakarta.inject.Inject;
 
 @RabbitListener(connection = "boo-connection")
 //@RabbitProperty(name = "userId", value = "irina")

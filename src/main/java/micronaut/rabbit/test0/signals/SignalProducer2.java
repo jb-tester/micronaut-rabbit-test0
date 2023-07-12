@@ -1,7 +1,8 @@
 package micronaut.rabbit.test0.signals;
 
-import io.micronaut.configuration.rabbitmq.annotation.Binding;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitClient;
+
+import io.micronaut.rabbitmq.annotation.Binding;
+import io.micronaut.rabbitmq.annotation.RabbitClient;
 
 @RabbitClient(value = "signals_exchange",connection = "signals-connection2")
 public interface SignalProducer2 {

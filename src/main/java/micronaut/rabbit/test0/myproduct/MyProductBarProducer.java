@@ -1,7 +1,8 @@
 package micronaut.rabbit.test0.myproduct;
 
-import io.micronaut.configuration.rabbitmq.annotation.Binding;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitClient;
+
+import io.micronaut.rabbitmq.annotation.Binding;
+import io.micronaut.rabbitmq.annotation.RabbitClient;
 
 @RabbitClient(value = "myproduct_exchange", connection = "bar-connection")
 public interface MyProductBarProducer {

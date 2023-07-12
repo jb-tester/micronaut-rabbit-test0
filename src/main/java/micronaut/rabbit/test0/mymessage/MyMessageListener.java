@@ -1,7 +1,8 @@
 package micronaut.rabbit.test0.mymessage;
 
-import io.micronaut.configuration.rabbitmq.annotation.Queue;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitListener;
+
+import io.micronaut.rabbitmq.annotation.Queue;
+import io.micronaut.rabbitmq.annotation.RabbitListener;
 
 @RabbitListener(connection = "foo-connection")
 public class MyMessageListener extends MessageCollector {

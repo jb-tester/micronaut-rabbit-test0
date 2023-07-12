@@ -1,14 +1,15 @@
 package micronaut.rabbit.test0.signals;
 
-import io.micronaut.configuration.rabbitmq.annotation.Queue;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitListener;
 
-import javax.inject.Inject;
+import io.micronaut.rabbitmq.annotation.Queue;
+import io.micronaut.rabbitmq.annotation.RabbitListener;
+import jakarta.inject.Inject;
 
 @RabbitListener(connection = "signals-connection2")
 public class SignalListener2 {
 
-    @Inject SignalRepo repo;
+    @Inject
+    SignalRepo repo;
 
     @Queue("${my.signals.signal-queue}")
     public void receive(String signal){

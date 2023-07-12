@@ -1,7 +1,8 @@
 package micronaut.rabbit.test0.mymessage;
 
-import io.micronaut.configuration.rabbitmq.annotation.Binding;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitClient;
+
+import io.micronaut.rabbitmq.annotation.Binding;
+import io.micronaut.rabbitmq.annotation.RabbitClient;
 
 @RabbitClient(connection = "foo-connection")
 public interface MyMessageProducer {

@@ -1,10 +1,11 @@
 package micronaut.rabbit.test0.myproduct;
 
 import com.rabbitmq.client.Envelope;
-import io.micronaut.configuration.rabbitmq.annotation.Queue;
-import io.micronaut.configuration.rabbitmq.annotation.RabbitListener;
 
-import javax.inject.Inject;
+
+import io.micronaut.rabbitmq.annotation.Queue;
+import io.micronaut.rabbitmq.annotation.RabbitListener;
+import jakarta.inject.Inject;
 
 @RabbitListener(connection = "bar-connection")
 public class MyProductBarListener {

@@ -1,6 +1,6 @@
 package micronaut.rabbit.test0.mymessage;
 
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 import java.util.ArrayList;
 import java.util.List;
 
